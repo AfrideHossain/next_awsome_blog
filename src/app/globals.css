@@ -6,7 +6,51 @@
   --btn: #3673fd;
 }
 
-body{
-    background-color: var(--bg);
-    color: var(--text);
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.container {
+  width: 1536px;
+  margin: auto;
+  padding: 0 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* responsive */
+@media only screen and (max-width: 1536px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 1024;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 640px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 475px;
+  }
 }
